@@ -19,10 +19,6 @@ export const pages = [
 export const data = {
   title: "Hi, I am Rada,",
   body: "As an aspiring junior developer, I'm thrilled about diving into the world of web development, learning, and creating awesome things online. I can't wait to embark on this exciting programming journey and bring my passion and dedication to the table. If you want to know more about me, check out my CV! ",
-  // highlightedBody:
-  //   "As a beginner, I'm constantly seeking new challenges and projects to work on. I'm particularly interested in web development, machine learning, and game development, and I've completed several personal projects in these areas. I'm always eager to take on new challenges and collaborate with others, and I believe that working on projects is the best way to learn and grow as a software engineer.",
-  // body2:
-  //   "When I'm not coding, I enjoy spending time with my family and friends, watching movies, and playing video games. I'm a lifelong learner, and I'm always looking for new books, tutorials, and courses to help me improve my skills and knowledge. If you're interested in learning more about my skills and experience, feel free to take a look at my CV. I'd love to hear from you and discuss potential opportunities to collaborate on projects or learn from each other.",
 };
 
 export const contactMeText = {

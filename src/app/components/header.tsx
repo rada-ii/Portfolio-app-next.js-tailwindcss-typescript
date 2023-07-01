@@ -4,7 +4,6 @@ import Link from "next/link";
 
 // import { pages, data } from "./data/data";
 type HeaderProps = {
-  name: string;
   pages: {
     id: number;
     label: string;
