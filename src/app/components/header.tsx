@@ -12,7 +12,7 @@ type HeaderProps = {
   }[];
 };
 
-export const Header = ({ name, pages }: HeaderProps) => {
+export const Header = ({ pages }: HeaderProps) => {
   return (
     <header className="mx-10 mb-2">
       <div className="lg:nav mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6">
