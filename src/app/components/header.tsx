@@ -13,7 +13,7 @@ interface HeaderProps {
   pages: Page[];
 }
 
-const cv = "../cv/cv.pdf";
+// const cv = "../cv/cv.pdf";
 
 const Header: React.FC<HeaderProps> = ({ pages }) => {
   return (
@@ -33,7 +33,16 @@ const Header: React.FC<HeaderProps> = ({ pages }) => {
             );
           })}
         </nav>
-        <a href={cv} download="your_cv.pdf">
+        {/* <a
+          href="/cv/cv.pdf"
+         
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download FIle
+        </a> */}
+        {/* <a href={cv} download="your_cv.pdf"> */}
+        <a href="/cv/cv.pdf" target="_blank" rel="noopener noreferrer">
           <button className="min-w-100 font-display animate-flyInRight rounded-full bg-indigo-400 px-6 py-2 font-bold text-black opacity-100 hover:bg-white hover:text-indigo-400 sm:bg-none">
             Download CV
           </button>
