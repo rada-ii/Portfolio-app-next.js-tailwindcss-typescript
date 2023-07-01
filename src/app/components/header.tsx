@@ -2,7 +2,7 @@ import cv from "../cv/cv.pdf";
 import React from "react";
 import Link from "next/link";
 
-import { pages } from "./data/data";
+import { pages, data } from "./data/data";
 interface Page {
   id: number;
   label: string;
@@ -13,10 +13,12 @@ interface HeaderProps {
   pages: Page[];
 }
 
+const cv = "../cv/cv.pdf";
+
 const Header: React.FC<HeaderProps> = ({ pages }) => {
   return (
     <header className="mx-10 mb-2">
-      <div className="lg: nav mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6">
+      <div className="lg:nav mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6">
         <nav className="flex flex-row gap-1 self-end text-center sm:gap-6">
           {pages.map((page) => {
             return (
