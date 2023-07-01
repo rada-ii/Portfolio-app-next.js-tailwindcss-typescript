@@ -2,10 +2,20 @@ import React from "react";
 import Link from "next/link";
 import cv from "../cv/cv.pdf";
 
-const Header = ({ pages }) => {
+import { pages } from "./data/data";
+
+type Header = {
+  pages: {
+    id: number;
+    label: string;
+    link: string;
+  }[];
+};
+
+const Header = ({ pages }: Header) => {
   return (
     <header className="mx-10">
-      <div className="mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6">
+      <div className="lg: mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6 ">
         <nav className="flex flex-row gap-1 self-end text-right sm:gap-6">
           {pages.map((page) => {
             return (

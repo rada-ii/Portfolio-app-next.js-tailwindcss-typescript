@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const AboutMe: React.FC = () => {
   return (
-    <div className="container h-screen">
-      <div className=" textContainer  sm:text-[8px] 2xl:text-3xl ">
-        <div className="opacity-50">
+    <div className="container h-screen ">
+      <div className=" textContainer  lg:sp sm:text-[8px] sm:leading-none sm:opacity-100 md:text-[10px] md:leading-none lg:text-[13px] xl:text-2xl 2xl:text-3xl">
+        <div className="text opacity-50">
           <h2>{data.title}</h2>
           <p className=" leading-loose">{data.body}</p>
         </div>
@@ -28,7 +28,7 @@ const AboutMe: React.FC = () => {
           aria-label={"My image"}
           alt={"My image"}
           src={"/images/cvvv.jpg"}
-          className="h-250 w-500  img rounded-3xl  object-cover opacity-40 "
+          className="h-250 w-500  img img  rounded-3xl object-cover opacity-100 "
         />
       </div>
     </div>
