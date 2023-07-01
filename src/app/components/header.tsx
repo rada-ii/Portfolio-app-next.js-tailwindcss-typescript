@@ -1,4 +1,4 @@
-import cv from "../cv/cv.pdf";
+// import cv from "../cv/cv.pdf";
 import React from "react";
 import Link from "next/link";
 
