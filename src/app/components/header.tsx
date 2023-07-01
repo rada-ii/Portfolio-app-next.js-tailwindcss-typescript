@@ -1,18 +1,19 @@
+import cv from "../cv/cv.pdf";
 import React from "react";
 import Link from "next/link";
-import cv from "../cv/cv.pdf";
 
 import { pages } from "./data/data";
+interface Page {
+  id: number;
+  label: string;
+  link: string;
+}
 
-type Header = {
-  pages: {
-    id: number;
-    label: string;
-    link: string;
-  }[];
-};
+interface HeaderProps {
+  pages: Page[];
+}
 
-const Header = ({ pages }: Header) => {
+const Header: React.FC<HeaderProps> = ({ pages }) => {
   return (
     <header className="mx-10">
       <div className="lg: mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6 ">
