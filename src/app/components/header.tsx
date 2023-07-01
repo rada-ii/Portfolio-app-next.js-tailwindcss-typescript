@@ -2,20 +2,17 @@
 import React from "react";
 import Link from "next/link";
 
-import { pages, data } from "./data/data";
-interface Page {
-  id: number;
-  label: string;
-  link: string;
-}
+// import { pages, data } from "./data/data";
+type HeaderProps = {
+  name: string;
+  pages: {
+    id: number;
+    label: string;
+    link: string;
+  }[];
+};
 
-interface HeaderProps {
-  pages: Page[];
-}
-
-// const cv = "../cv/cv.pdf";
-
-const Header: React.FC<HeaderProps> = ({ pages }) => {
+export const Header = ({ name, pages }: HeaderProps) => {
   return (
     <header className="mx-10 mb-2">
       <div className="lg:nav mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6">
