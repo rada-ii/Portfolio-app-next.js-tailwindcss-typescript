@@ -3,23 +3,24 @@ import Image from "next/image";
 import { data } from "./data/data";
 
 const AboutMe: React.FC = () => {
-  // Define the type for the 'data' object
   type Data = {
     title: string;
     body: string;
   };
 
-  // Replace the 'data' object with the typed version
   const aboutData: Data = {
     title: data.title,
     body: data.body,
   };
+
   return (
     <div className="container h-screen ">
       <div className="textContainer lg:sp sm:text-[8px] sm:leading-none sm:opacity-100 md:text-[10px] md:leading-none lg:text-[13px] xl:text-2xl 2xl:text-3xl">
-        <div className="text opacity-50">
-          <h2>{aboutData.title}</h2>
-          <p className="leading-loose">{aboutData.body}</p>
+        <div className="text  leading-loose opacity-50">
+          <h2 className="gradient">{aboutData.title}</h2>
+          <p className="gradient">
+            {aboutData.body} <span className="no">😊</span>
+          </p>
         </div>
         {/* <a href={cv} download="your_cv.pdf">
           <button
@@ -38,7 +39,7 @@ const AboutMe: React.FC = () => {
           aria-label={"My image"}
           alt={"My image"}
           src={"/images/cvvv.jpg"}
-          className="h-250 w-500 img img rounded-3xl object-cover opacity-100 "
+          className="h-250 w-500 img img rounded-3xl object-cover opacity-30 "
         />
       </div>
     </div>

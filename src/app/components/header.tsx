@@ -15,16 +15,16 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ pages }) => {
   return (
-    <header className="mx-10">
-      <div className="lg: mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6 ">
-        <nav className="flex flex-row gap-1 self-end text-right sm:gap-6">
+    <header className="mx-10 mb-2">
+      <div className="lg: nav mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6">
+        <nav className="flex flex-row gap-1 self-end text-center sm:gap-6">
           {pages.map((page) => {
             return (
               <Link
                 aria-label={page.label}
                 key={page.id}
                 href={page.link}
-                className="min-w-100 font-display animate-flyInLeft rounded-3xl bg-indigo-400 px-6 py-2 font-bold tracking-wide hover:bg-white hover:text-indigo-400 sm:bg-none"
+                className="min-w-100 font-display animate-flyInLeft rounded-full bg-indigo-400 px-6 py-2 font-bold tracking-wide hover:bg-white hover:text-indigo-400 sm:bg-none"
               >
                 {page.label}
               </Link>
