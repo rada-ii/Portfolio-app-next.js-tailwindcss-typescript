@@ -20,12 +20,12 @@ export const ProjectCard = ({ data }: ProjectCardProps) => {
   const { title, body1, body2, image, links } = data;
 
   return (
-    <div className="sm:w-1/3-g w-full rounded-3xl   border-2 border-slate-100  shadow-lg">
+    <div className="sm:w-1/3-g flex w-full flex-col justify-between rounded-3xl  border-2 border-slate-100  shadow-lg">
       <Image
         aria-label={`Image of ${title}`}
         src={image}
         alt={title}
-        className="card-img max-h-80 w-full object-cover "
+        className="card-img min-h-80   w-full object-cover "
         priority={false}
         width={500}
         height={250}
@@ -41,7 +41,7 @@ export const ProjectCard = ({ data }: ProjectCardProps) => {
           {body2}
         </p>
         <div className="mt-4 flex flex-row justify-between text-white">
-          <a href={links[0].url} className="links flex items-center self-end">
+          <a href={links[0].url} className="links flex items-center ">
             <Github className="contact" />
             <span className="text-white  hover:text-indigo-400">
               {links[0].text}

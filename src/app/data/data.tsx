@@ -31,7 +31,7 @@ export const projects = [
     title: "Pokemon App",
     body1:
       "A web application that allows users to search Pokemon characters from Api endpoint, liked them and see details about each Pokemon!",
-    body2: "Technologies used: React, Bootstrap.",
+    body2: "Technologies used: React, Bootstrap",
     image: "/images/pokemon-img.jpg",
     links: [
       {
@@ -62,23 +62,6 @@ export const projects = [
     ],
   },
   {
-    title: "Movie Quotes",
-    body1:
-      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details.",
-    body2: "Technologies used: React, Vanilla Css",
-    image: "/images/movie quotes.jpg",
-    links: [
-      {
-        text: "Source Code",
-        url: "https://github.com/rada-ii/Movie-Quotes",
-      },
-      {
-        text: "Live Site",
-        url: "https://movie-quotes-xi.vercel.app/",
-      },
-    ],
-  },
-  {
     title: "React People",
     body1:
       "A web application that allows users to search People from Api endpoint, and to see details about each person.",
@@ -100,7 +83,7 @@ export const projects = [
     body1:
       "A simple web application that allows users to see some news and images about space from Api endpoint.",
     body2: "Technologies used: React, Vanilla Css",
-    image: "/images/space-news.jpg",
+    image: "/images/space.png",
     links: [
       {
         text: "Source Code",
@@ -109,6 +92,23 @@ export const projects = [
       {
         text: "Live Site",
         url: "https://space-flight-news-ten.vercel.app/",
+      },
+    ],
+  },
+  {
+    title: "Movie Quotes",
+    body1:
+      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details.",
+    body2: "Technologies used: React, Vanilla Css",
+    image: "/images/movie.png",
+    links: [
+      {
+        text: "Source Code",
+        url: "https://github.com/rada-ii/Movie-Quotes",
+      },
+      {
+        text: "Live Site",
+        url: "https://movie-quotes-xi.vercel.app/",
       },
     ],
   },
