@@ -45,7 +45,7 @@ export const Form = () => {
     let timeout: NodeJS.Timeout;
     if (isMessageSent && formRef) {
       formRef.current?.reset();
-      timeout = setTimeout(() => {
+      setTimeout(() => {
         setMessageSent(false);
       }, 2000);
     }
@@ -56,68 +56,71 @@ export const Form = () => {
 
   return (
     <>
-      <form
-        onSubmit={handleSubmit}
-        className="body-font mt-0 h-screen w-full text-gray-700"
-      >
-        <div className="container mx-auto flex-col px-5 py-24">
-          <div className="mb-12 flex h-max  w-full flex-col text-center"></div>
-          <div className="mx-auto ">
-            <div className="-m-2 flex flex-wrap">
-              <div className="w-1/2 p-2">
-                <div className="relative">
-                  <label
-                    htmlFor="name"
-                    className="text-sm leading-7 text-gray-600"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full rounded border border-gray-300 bg-gray-100 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500"
-                  />
-                </div>
-              </div>
-              <div className="w-1/2 p-2">
-                <div className="relative">
-                  <label
-                    htmlFor="email"
-                    className="text-sm leading-7 text-gray-600"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full rounded border border-gray-300 bg-gray-100 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500"
-                  />
-                </div>
-              </div>
-              <div className="w-full p-2">
-                <div className="relative">
-                  <label
-                    htmlFor="message"
-                    className="text-sm leading-7 text-gray-600"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    className="h-32 w-full resize-none rounded border border-gray-300 bg-gray-100 px-3 py-1 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500"
-                  ></textarea>
-                </div>
-              </div>
-              <div className="w-full p-2">
-                <button className="mx-auto flex rounded border-0 bg-indigo-500 px-8 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none">
-                  Send
-                </button>
-              </div>
-            </div>
-          </div>
+      <form onSubmit={handleSubmit} className="p-10 text-white" ref={formRef}>
+        <div className="mb-4">
+          <label className="label-form" htmlFor="name">
+            Name
+          </label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            className="w-full border border-indigo-400 bg-transparent"
+            required
+            // minLength={3}
+            // maxLength={200}
+          />
+        </div>
+
+        <div className="mb-4">
+          <label className="label-form" htmlFor="company">
+            Company
+          </label>
+          <input
+            id="company"
+            type="text"
+            name="company"
+            className="w-full border border-indigo-400 bg-transparent"
+            minLength={2}
+            maxLength={200}
+          />
+        </div>
+
+        <div className="mb-4">
+          <label className="label-form" htmlFor="email">
+            Email
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            className="w-full border border-indigo-400 bg-transparent"
+            required
+            minLength={2}
+            maxLength={200}
+          />
+        </div>
+
+        <div className="mb-4">
+          <label className="label-form mb-4" htmlFor="message">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            className="w-full border border-indigo-400 bg-transparent"
+            required
+            minLength={10}
+            maxLength={1000}
+          />
+        </div>
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            className="bg-blue hover:text-blue min-w-100 hover:border-indigo-300hover:border-1 mx-auto h-12 self-center rounded-md border border-slate-300 px-5 text-center text-white hover:bg-white"
+          >
+            Send Message
+          </button>
         </div>
       </form>
       {isMessageSent && <p> Message has been Sent</p>}

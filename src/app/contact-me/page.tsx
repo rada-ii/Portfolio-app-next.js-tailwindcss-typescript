@@ -4,18 +4,16 @@ import { Form } from "./components/form";
 
 const ContactMePage = () => {
   return (
-    <div className=" mx-32  mt-10  content-center text-white">
-      <h2 className="text-center text-5xl">
-        {" "}
-        CONTACT ME (not working just yet)
-      </h2>
-      <div className=" m-auto flex  flex-col content-center gap-20 p-20">
-        <div className="flex  flex-col items-center">
+    <div className="m-auto mt-10 flex h-screen w-11/12 flex-col content-center">
+      <h2 text-white> CONTACT ME</h2>
+      <div className="text-grey-light mx-auto flex w-10/12  flex-col content-center gap-20 p-20">
+        <div className="flex w-full flex-col text-center text-white">
           <h3 className="mb-10 text-2xl">{contactMeText.title}</h3>
           <p>{contactMeText.body}</p>
         </div>
-
-        <Form />
+        <div className="w-full flex-grow">
+          <Form />
+        </div>
       </div>
     </div>
   );
