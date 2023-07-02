@@ -41,7 +41,7 @@ export const projects = [
       },
       {
         text: "Live Site",
-        url: "pokemon-react-app-gamma.vercel.app",
+        url: "https://pokemon-react-app-gamma.vercel.app/",
       },
     ],
   },
@@ -59,7 +59,7 @@ export const projects = [
       },
       {
         text: "Live Site",
-        url: "bit-show-react.vercel.app",
+        url: "https://bit-show-react.vercel.app/",
       },
     ],
   },
@@ -95,7 +95,7 @@ export const projects = [
       },
       {
         text: "Live Site",
-        url: "react-people.vercel.app",
+        url: "https://react-people.vercel.app/",
       },
     ],
   },
@@ -127,7 +127,7 @@ export const projects = [
   //   links: [
   //     {
   //       text: "Source Code",
-  //       url: "https://github.com/rada-ii/100-books",
+  //       url: "https://github.com/rada-ii/100-books/",
   //     },
   //     {
   //       text: "Live Site",
@@ -148,7 +148,7 @@ export const projects = [
       },
       {
         text: "Live Site",
-        url: "recipe-blog-navy.vercel.app/",
+        url: " https://recipe-blog-navy.vercel.app/",
       },
     ],
   },

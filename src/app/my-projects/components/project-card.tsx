@@ -30,18 +30,28 @@ export const ProjectCard = ({ data }: ProjectCardProps) => {
         width={500}
         height={250}
       />
-      <div className="p-4 ">
-        <h3 className="text-center text-lg font-medium text-white">{title}</h3>
-        <p className="min-h-50 mt-2 text-sm text-white">{body1}</p>
-        <p className="min-h-50 mt-2 text-sm text-white"> {body2}</p>
+      <div className="p-8 ">
+        <h3 className="my-7 text-center text-3xl  font-medium text-white">
+          {title}
+        </h3>
+        <p className="min-h-50 my-8 mt-2 text-justify text-xl  text-indigo-400">
+          {body1}
+        </p>
+        <p className="min-h-50 mt-2 text-center text-2xl  text-white">
+          {body2}
+        </p>
         <div className="mt-4 flex flex-row justify-between text-white">
           <a href={links[0].url} className="flex items-center">
             <Github className="contact" />
-            <span className="text-white">{links[0].text}</span>
+            <span className="text-white  hover:text-indigo-400">
+              {links[0].text}
+            </span>
           </a>
           <a href={links[1].url} className="flex items-center">
             <Window className="contact" />
-            <span className="text-white">{links[1].text}</span>
+            <span className="text-white  hover:text-indigo-400">
+              {links[1].text}
+            </span>
           </a>
         </div>
       </div>
