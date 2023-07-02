@@ -20,14 +20,14 @@ body {
   /* url("/images/bg-image.jpg"); */
 }
 
-html {
+/* html {
   background: url("/images/bg-image2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   object-fit: scale-down;
-}
+} */
 
 .image-container {
   width: 100%;
@@ -62,39 +62,33 @@ h6 {
 /* ============================= */
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 10rem;
-  margin: 0 auto;
+  margin: 0 auto !important;
+  overflow: visible;
 }
 
 .textContainer {
-  max-width: 40%;
+  max-width: 50%;
   /* max-height: fit-content; */
   animation: flyInRight 3s ease;
   color: #fff;
   margin-left: 10rem;
-  line-height: 2;
+  line-height: 1.6 !important;
 }
 
 .imageContainer {
   width: 50%;
   animation: flyInLeft 3s ease;
-  justify-self: flex-end;
+  /* justify-self: flex-end; */
+
+  /* margin-right: 2rem; */
 }
 
-.imageContainer {
-  /* background: radial-gradient(transparent, #130d13fc); */
-  /* z-index: 100; */
-  /* background-color: red; */
-  /* width: 100%; */
-  /* box-shadow: inset 0 0 10px 30px rgb(19, 13, 19); */
+.text {
+  margin: 0;
 }
-
-.img {
-  visibility: 50%;
-}
-
 @keyframes flyInLeft {
   from {
     transform: translateX(-100%);
@@ -150,7 +144,7 @@ h6 {
 }
 
 /* ===================================== */
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   .text {
     font-size: 8px;
     line-height: normal;
@@ -159,18 +153,19 @@ h6 {
   .container {
     flex-direction: row;
     gap: 1rem;
-  }
-}
+  } 
+}*/
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .container {
     flex-direction: row;
     gap: 2rem;
+    justify-content: center;
   }
 
   .text {
-    font-size: 1.5rem;
-    line-height: normal;
+    font-size: 1.2rem;
+    line-height: 1.2;
   }
 }
 
@@ -178,7 +173,8 @@ h6 {
   .container {
     flex-direction: column;
     gap: 2rem;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: 2rem auto !important;
   }
 
   .textContainer {
@@ -187,8 +183,8 @@ h6 {
   }
 
   .text {
-    font-size: 1.8rem;
-    line-height: 1;
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
 }
 
@@ -201,7 +197,7 @@ h6 {
   }
 
   .text {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 1.1;
   }
 
@@ -226,7 +222,7 @@ h6 {
     align-items: center !important;
     align-self: center !important;
     /* align-self: flex-start !important; */
-    gap: 2rem !;
+    gap: 2rem;
   }
 
   .nav {
@@ -235,25 +231,10 @@ h6 {
     justify-content: center !important;
   }
   header {
-    font-size: 1.5rem;
-    margin-bottom: 2rem !important;
+    font-size: 1.2rem;
+    /* margin-bottom: 2rem !important; */
   }
 }
-
-/* @media (max-width: 1800px) {
-  .container {
-    
-    justify-content: center !important;
-   
-  }
-
-  .textContainer {
-   
-  }
-} */
-/* .textContainer {
-  width: 100%;
-} */
 
 .text {
   background: linear-gradient(
@@ -262,9 +243,9 @@ h6 {
     #f8fafc 0%,
     #f8fafc 5%,
     #eef2ff 5%,
-    #eef2ff 17%,
+    #eef2ff 14%,
 
-    #818cf8 15%,
+    #818cf8 14%,
     #818cf8 32%,
     white 32%,
     white 80%,
@@ -282,4 +263,54 @@ span {
 
 footer {
   margin-top: 2rem !important;
+}
+
+/* ========================================= */
+
+html {
+  background: linear-gradient(
+    50deg,
+    /* #fff 0%, */ #131913 5%,
+    #818cf8 7%,
+    #131913 10%,
+    #13293d 23%,
+    /* #fff 28%, */ #131913 29%,
+    #0b0014 54%,
+    #13293d 59%,
+    #131913 85%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.imageContainer1 {
+  position: relative;
+  max-width: 500px;
+  max-height: 540px;
+  border-radius: 3rem;
+}
+
+.imageContainer1::after {
+  border-radius: 3rem; /* Add border-radius for rounded corners if needed */
+  box-shadow: inset 0 0 30px 50px rgba(19, 33, 37, 0.859) !important; /* Adjust the values for a stronger or softer shadow */
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* z-index: 100; */
+}
+
+.img {
+  opacity: 0.3 !important;
+  border-radius: 3rem;
+}
+
+.mg {
+  overflow: visible;
+}
+
+header {
+  overflow: visible;
 }
