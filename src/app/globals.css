@@ -145,17 +145,6 @@ h6 {
 }
 
 /* ===================================== */
-/* @media (max-width: 640px) {
-  .text {
-    font-size: 8px;
-    line-height: normal;
-  }
-
-  .container {
-    flex-direction: row;
-    gap: 1rem;
-  } 
-}*/
 
 @media (max-width: 1400px) {
   .container {

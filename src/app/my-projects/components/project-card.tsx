@@ -34,7 +34,7 @@ export const ProjectCard = ({ data }: ProjectCardProps) => {
         <h3 className="my-7 text-center text-3xl  font-medium text-white">
           {title}
         </h3>
-        <p className="min-h-50 my-8 mt-2 text-justify text-xl  text-indigo-400">
+        <p className="min-h-50 my-12 mt-2 text-justify text-xl  text-indigo-400">
           {body1}
         </p>
         <p className="min-h-50 mt-2 text-center text-2xl  text-white">
