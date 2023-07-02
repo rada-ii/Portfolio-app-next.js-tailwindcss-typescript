@@ -32,8 +32,7 @@ export const projects = [
     body1:
       "A web application that allows users to search Pokemon characters from Api endpoint, liked them and see details about each Pokemon!",
     body2: "Technologies used: React, Bootstrap.",
-    image:
-      "https://drive.google.com/file/d/1jv_UL8DBerLcauhmC9uXqN7pInbAZFne/view?usp=sharing",
+    image: "/images/pokemon-img.jpg",
     links: [
       {
         text: "Source Code",
@@ -50,8 +49,7 @@ export const projects = [
     body1:
       "A web application that allows users to search Tv Shows from Api endpoint, and to see details about each show.",
     body2: "Technologies used: React, Vanilla Css",
-    image:
-      "https://drive.google.com/file/d/1KwG9e459SaoRelN51Bg_F-z8cqmeHJUe/view?usp=sharing",
+    image: "/images/bit-show.jpg",
     links: [
       {
         text: "Source Code",
@@ -68,8 +66,7 @@ export const projects = [
     body1:
       "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details.",
     body2: "Technologies used: React, Vanilla Css",
-    image:
-      "https://drive.google.com/file/d/1dPb8QD9juWCNLABjGrGczlapQy3-ncus/view?usp=sharing",
+    image: "/images/movie quotes.jpg",
     links: [
       {
         text: "Source Code",
@@ -86,8 +83,7 @@ export const projects = [
     body1:
       "A web application that allows users to search People from Api endpoint, and to see details about each person.",
     body2: "Technologies used: React, Vanilla Css",
-    image:
-      "https://drive.google.com/file/d/1IOiJ6L5HZ30-g0WPmpr_hTG4hMeTwoU8/view?usp=sharing",
+    image: "/images/bit-persons.jpg",
     links: [
       {
         text: "Source Code",
@@ -104,8 +100,7 @@ export const projects = [
     body1:
       "A simple web application that allows users to see some news and images about space from Api endpoint.",
     body2: "Technologies used: React, Vanilla Css",
-    image:
-      "https://drive.google.com/file/d/1LZjE3vwpKUezfgQjBP2dKklnBLmlwBTR/view?usp=sharing",
+    image: "/images/space-news.jpg",
     links: [
       {
         text: "Source Code",
@@ -140,7 +135,7 @@ export const projects = [
     body1:
       "A simple web application that allows users to browse some food recipe. It's a personal practice project.",
     body2: "Technologies used: HTML, JS & Vanilla Css",
-    image: "luke-chesser-JKUTrJ4vK00-unsplash.jpg",
+    image: "/images/recipe-blog.jpg",
     links: [
       {
         text: "Source Code",

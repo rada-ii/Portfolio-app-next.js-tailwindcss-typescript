@@ -6,10 +6,10 @@ const MyProjects = () => {
   return (
     <div className="body mx-auto grid h-screen w-screen  ">
       <div className=" m-auto mt-10 flex w-11/12 flex-col content-center">
-        <h2 className="mb-10 text-center text-2xl font-bold text-white">
+        <h2 className="mb-10 text-center text-5xl font-bold text-white">
           My Projects
         </h2>
-        <div className="animate-flyInRight  mx-auto  my-12 grid grid-cols-3 grid-rows-3 gap-x-8 gap-y-20">
+        <div className="animate-flyInRight mx-8  my-12 grid  grid-cols-1 grid-rows-3 gap-x-8 gap-y-20 xl:grid-cols-2 2xl:grid-cols-3">
           {projects.map((project, index) => {
             return <ProjectCard data={project} key={index} />;
           })}
