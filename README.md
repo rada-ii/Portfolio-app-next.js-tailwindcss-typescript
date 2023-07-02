@@ -1,4 +1,5 @@
-checkout live:https://portfolio-rada-ii.vercel.app/
+checkout live:
+https://portfolio-cv-rada.netlify.app/
 
 
 
