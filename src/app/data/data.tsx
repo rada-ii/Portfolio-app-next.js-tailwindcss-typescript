@@ -28,103 +28,104 @@ export const contactMeText = {
 
 export const projects = [
   {
-    title: "Personal Finance Tracker",
+    title: "Pokemon App",
     body1:
-      "A web application that allows users to track their income and expenses, categorize transactions, and view reports and charts to gain insights into their spending habits.",
-    body2: "Technologies used: HTML, CSS, JavaScript, and Flask.",
-    image: "luke-chesser-JKUTrJ4vK00-unsplash.jpg",
+      "A web application that allows users to search Pokemon characters from Api endpoint, liked them and see details about each Pokemon!",
+    body2: "Technologies used: React, Bootstrap.",
+
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/richardbrown/personal-finance-tracker",
+        url: "https://github.com/rada-ii/Pokemon-react-app",
       },
       {
         text: "Live Site",
-        url: "https://personal-finance-tracker.richardbrown.net",
+        url: "pokemon-react-app-gamma.vercel.app",
       },
     ],
   },
   {
-    title: "Movie Recommendation System",
+    title: "Bit-Show",
     body1:
-      "A machine learning model that recommends movies to users based on their viewing history and preferences.",
-    body2: "Technologies used: Python, Pandas, NumPy, and scikit-learn",
-    image: "charlesdeluvio-jtmwD4i4v1U-unsplash.png",
+      "A web application that allows users to search Tv Shows from Api end point, and to see details about each show ",
+    body2: "Technologies used: React, Vanilla Css",
+
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/richardbrown/weather-app",
+        url: "https://github.com/rada-ii/bit-show-react",
       },
       {
         text: "Live Site",
-        url: "https://weather-app.richardbrown.net",
+        url: "bit-show-react.vercel.app",
       },
     ],
   },
   {
-    title: "Tic-Tac-Toe Game",
-    body1: "A simple game of Tic-Tac-Toe built with Python and Pygame. ",
-    body2: "Technologies used: Python and Pygame.",
-    image: "tic_tac_toe.png",
+    title: "Movie Quotes",
+    body1:
+      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details about each movie.  ",
+    body2: "React, Vanilla Css",
+
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/richardbrown/tic-tac-toe-app",
+        url: "https://github.com/rada-ii/Movie-Quotes",
       },
       {
         text: "Live Site",
-        url: "https://todo-list-app.richardbrown.net",
+        url: "https://movie-quotes-xi.vercel.app/",
       },
     ],
   },
   {
-    title: "Weather App",
+    title: "Movie Quotes",
     body1:
-      "A web application that allows users to search for the current weather conditions in any city in the world.",
-    body2: "Technologies used: HTML, CSS, JavaScript, and OpenWeather API.",
-    image: "luke-chesser-JKUTrJ4vK00-unsplash.jpg",
+      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details about each movie.  ",
+    body2: "React, Vanilla Css",
+
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/richardbrown/weather-app",
+        url: "https://github.com/rada-ii/Movie-Quotes",
       },
       {
         text: "Live Site",
-        url: "https://weather-app.richardbrown.net",
+        url: "https://movie-quotes-xi.vercel.app/",
       },
     ],
   },
   {
-    title: "Todo List App",
+    title: "Movie Quotes",
     body1:
-      "A simple todo list application that allows users to add, edit, and delete tasks, and mark them as complete.",
-    body2: "Technologies used: HTML, CSS, JavaScript, and local storage.",
-    image: "luke-chesser-JKUTrJ4vK00-unsplash.jpg",
+      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details about each movie.  ",
+    body2: "React, Vanilla Css",
+
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/richardbrown/todo-list-app",
+        url: "https://github.com/rada-ii/Movie-Quotes",
       },
       {
         text: "Live Site",
-        url: "https://todo-list-app.richardbrown.net",
+        url: "https://movie-quotes-xi.vercel.app/",
       },
     ],
   },
   {
-    title: "Recipe Book",
+    title: "Movie Quotes",
     body1:
-      "A web application that allows users to search for and save their favorite recipes from around the world.",
-    body2: "Technologies used: HTML, CSS, JavaScript, and Edamam API.",
-    image: "luke-chesser-JKUTrJ4vK00-unsplash.jpg",
+      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details about each movie.  ",
+    body2: "React, Vanilla Css",
+
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/richardbrown/recipe-book",
+        url: "https://github.com/rada-ii/Movie-Quotes",
       },
       {
         text: "Live Site",
-        url: "https://recipe-book.richardbrown.net",
+        url: "https://movie-quotes-xi.vercel.app/",
       },
     ],
   },
