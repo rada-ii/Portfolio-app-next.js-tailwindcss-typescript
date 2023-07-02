@@ -59,6 +59,7 @@ h6 {
   @apply m-2  text-6xl text-indigo-400
   hover:text-white;
 }
+
 /* ============================= */
 .container {
   display: flex;
@@ -271,7 +272,23 @@ html {
   background: linear-gradient(
     50deg,
     /* #fff 0%, */ #131913 5%,
-    #818cf8 7%,
+    /* #818cf8 7%, */ #131913 10%,
+    #13293d 23%,
+    /* #fff 28%, */ #131913 29%,
+    #0b0014 54%,
+    #13293d 59%,
+    #131913 85%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.body {
+  background: linear-gradient(
+    50deg,
+    /* #fff 0%, */ #131913 5%,
+
     #131913 10%,
     #13293d 23%,
     /* #fff 28%, */ #131913 29%,
@@ -313,4 +330,9 @@ html {
 
 header {
   overflow: visible;
+}
+
+.card-img {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }

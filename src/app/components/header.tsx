@@ -13,7 +13,7 @@ type HeaderProps = {
 
 export const Header = ({ pages }: HeaderProps) => {
   return (
-    <header className="mx-10 mb-2">
+    <header className="mx-20   mb-2">
       <div className="nav mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6">
         <nav className="flex flex-row gap-3 self-end text-center sm:gap-6">
           {pages.map((page) => {
@@ -39,7 +39,7 @@ export const Header = ({ pages }: HeaderProps) => {
         </a> */}
         {/* <a href={cv} download="your_cv.pdf"> */}
         <a href="/cv/cv.pdf" target="_blank" rel="noopener noreferrer">
-          <button className="min-w-100 font-display animate-flyInRight m-0 rounded-full bg-indigo-400 px-6 py-2 font-bold text-black opacity-100 hover:bg-white hover:text-indigo-400">
+          <button className="min-w-100 font-display animate-flyInRight m-0   rounded-full bg-indigo-400 px-6 py-2 font-bold text-black opacity-100 hover:bg-white hover:text-indigo-400">
             Download CV
           </button>
         </a>

@@ -117,24 +117,24 @@ export const projects = [
       },
     ],
   },
-  {
-    title: "100 books",
-    body1:
-      "A simple web application that allows users to add & delete their own books to read.",
-    body2: "Technologies used: React, Vanilla Css",
-    image:
-      "https://drive.google.com/file/d/1wpTUh0NBYtgF4ujLoip5wTA4dV8Mq-TA/view?usp=sharing",
-    links: [
-      {
-        text: "Source Code",
-        url: "https://github.com/rada-ii/100-books",
-      },
-      {
-        text: "Live Site",
-        url: "100-books.vercel.app",
-      },
-    ],
-  },
+  // {
+  //   title: "100 books",
+  //   body1:
+  //     "A simple web application that allows users to add & delete their own books to read.",
+  //   body2: "Technologies used: React, Vanilla Css",
+  //   image:
+  //     "https://drive.google.com/file/d/1wpTUh0NBYtgF4ujLoip5wTA4dV8Mq-TA/view?usp=sharing",
+  //   links: [
+  //     {
+  //       text: "Source Code",
+  //       url: "https://github.com/rada-ii/100-books",
+  //     },
+  //     {
+  //       text: "Live Site",
+  //       url: "100-books.vercel.app",
+  //     },
+  //   ],
+  // },
   {
     title: "Recipe Blog",
     body1:
