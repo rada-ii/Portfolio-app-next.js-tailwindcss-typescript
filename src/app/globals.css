@@ -271,6 +271,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  /* height: 100%; */
 }
 .imageContainer1 {
   position: relative;
@@ -309,6 +310,14 @@ header {
   border-top-right-radius: 1.5rem;
 }
 
-form {
+/* form {
   margin: auto !important;
+} */
+
+.input {
+  @apply h-14 w-full rounded-3xl border border-indigo-400 bg-transparent;
+}
+
+.label-form {
+  @apply mb-2 px-3 text-xl font-extralight text-white;
 }

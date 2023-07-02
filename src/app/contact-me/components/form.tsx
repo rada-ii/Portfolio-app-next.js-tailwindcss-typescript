@@ -65,7 +65,7 @@ export const Form = () => {
             id="name"
             type="text"
             name="name"
-            className="w-full border border-indigo-400 bg-transparent"
+            className="input mt-4"
             required
             // minLength={3}
             // maxLength={200}
@@ -80,7 +80,7 @@ export const Form = () => {
             id="company"
             type="text"
             name="company"
-            className="w-full border border-indigo-400 bg-transparent"
+            className="input my-4"
             minLength={2}
             maxLength={200}
           />
@@ -94,7 +94,7 @@ export const Form = () => {
             id="email"
             type="email"
             name="email"
-            className="w-full border border-indigo-400 bg-transparent"
+            className="input my-4"
             required
             minLength={2}
             maxLength={200}
@@ -108,16 +108,16 @@ export const Form = () => {
           <textarea
             id="message"
             name="message"
-            className="w-full border border-indigo-400 bg-transparent"
+            className="my-4 h-48 w-full rounded-3xl border border-indigo-400 bg-transparent"
             required
-            minLength={10}
-            maxLength={1000}
+            // minLength={10}
+            // maxLength={1000}
           />
         </div>
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-blue hover:text-blue min-w-100 hover:border-indigo-300hover:border-1 mx-auto h-12 self-center rounded-md border border-slate-300 px-5 text-center text-white hover:bg-white"
+            className="bg-blue hover:text-blue min-w-100  mx-auto   h-12 self-center rounded-3xl  bg-indigo-400 px-5 text-center font-bold  text-black hover:bg-white hover:text-indigo-400"
           >
             Send Message
           </button>
