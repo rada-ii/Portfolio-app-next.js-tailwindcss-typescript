@@ -288,6 +288,8 @@ html {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  max-height: 100dvh;
+  max-height: 100dvh;
 }
 .imageContainer1 {
   position: relative;

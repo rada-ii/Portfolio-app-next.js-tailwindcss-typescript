@@ -66,7 +66,7 @@ export const projects = [
   {
     title: "Movie Quotes",
     body1:
-      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details about each movie.",
+      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details.",
     body2: "Technologies used: React, Vanilla Css",
     image:
       "https://drive.google.com/file/d/1dPb8QD9juWCNLABjGrGczlapQy3-ncus/view?usp=sharing",
@@ -138,7 +138,7 @@ export const projects = [
   {
     title: "Recipe Blog",
     body1:
-      "A simple web application that allows users to see some food recipes.",
+      "A simple web application that allows users to browse some food recipe. It's a personal practice project.",
     body2: "Technologies used: HTML, JS & Vanilla Css",
     image: "luke-chesser-JKUTrJ4vK00-unsplash.jpg",
     links: [

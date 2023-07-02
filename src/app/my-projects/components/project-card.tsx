@@ -25,12 +25,12 @@ export const ProjectCard = ({ data }: ProjectCardProps) => {
         aria-label={`Image of ${title}`}
         src={`/images/100-books.jpg`}
         alt={title}
-        className="card-img h-48 w-full object-cover "
+        className="card-img min-h-80   w-full object-cover "
         priority={false}
         width={500}
         height={250}
       />
-      <div className="p-8 ">
+      <div className="flex flex-col justify-between p-8">
         <h3 className="my-7 text-center text-3xl  font-medium text-white">
           {title}
         </h3>
