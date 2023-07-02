@@ -32,7 +32,8 @@ export const projects = [
     body1:
       "A web application that allows users to search Pokemon characters from Api endpoint, liked them and see details about each Pokemon!",
     body2: "Technologies used: React, Bootstrap.",
-
+    image:
+      "https://drive.google.com/file/d/1jv_UL8DBerLcauhmC9uXqN7pInbAZFne/view?usp=sharing",
     links: [
       {
         text: "Source Code",
@@ -49,7 +50,8 @@ export const projects = [
     body1:
       "A web application that allows users to search Tv Shows from Api endpoint, and to see details about each show.",
     body2: "Technologies used: React, Vanilla Css",
-
+    image:
+      "https://drive.google.com/file/d/1KwG9e459SaoRelN51Bg_F-z8cqmeHJUe/view?usp=sharing",
     links: [
       {
         text: "Source Code",
@@ -66,7 +68,8 @@ export const projects = [
     body1:
       "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details about each movie.",
     body2: "Technologies used: React, Vanilla Css",
-
+    image:
+      "https://drive.google.com/file/d/1dPb8QD9juWCNLABjGrGczlapQy3-ncus/view?usp=sharing",
     links: [
       {
         text: "Source Code",
@@ -83,7 +86,8 @@ export const projects = [
     body1:
       "A web application that allows users to search People from Api endpoint, and to see details about each person.",
     body2: "Technologies used: React, Vanilla Css",
-
+    image:
+      "https://drive.google.com/file/d/1IOiJ6L5HZ30-g0WPmpr_hTG4hMeTwoU8/view?usp=sharing",
     links: [
       {
         text: "Source Code",
@@ -100,7 +104,8 @@ export const projects = [
     body1:
       "A simple web application that allows users to see some news and images about space from Api endpoint.",
     body2: "Technologies used: React, Vanilla Css",
-
+    image:
+      "https://drive.google.com/file/d/1LZjE3vwpKUezfgQjBP2dKklnBLmlwBTR/view?usp=sharing",
     links: [
       {
         text: "Source Code",
@@ -117,7 +122,8 @@ export const projects = [
     body1:
       "A simple web application that allows users to add & delete their own books to read.",
     body2: "Technologies used: React, Vanilla Css",
-
+    image:
+      "https://drive.google.com/file/d/1wpTUh0NBYtgF4ujLoip5wTA4dV8Mq-TA/view?usp=sharing",
     links: [
       {
         text: "Source Code",
@@ -134,11 +140,11 @@ export const projects = [
     body1:
       "A simple web application that allows users to see some food recipes.",
     body2: "Technologies used: HTML, JS & Vanilla Css",
-
+    image: "luke-chesser-JKUTrJ4vK00-unsplash.jpg",
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/rada-ii/Recipe_Blog",
+        url: "https://drive.google.com/file/d/156KUDJ8nTzKVd0PwaQrhi5YWiX9NxQMN/view?usp=sharing",
       },
       {
         text: "Live Site",
