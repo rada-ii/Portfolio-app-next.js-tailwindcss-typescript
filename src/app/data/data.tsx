@@ -23,7 +23,7 @@ export const data = {
 
 export const contactMeText = {
   title: "Hello there! ",
-  body: "I am a data scientist and machine learning engineer with a passion for solving complex problems with data.  I bring a unique blend of technical and interpersonal skills to the table. I'm always eager to take on new challenges and collaborate with like-minded individuals. If you'd like to get in touch, simply fill out the form below and I'll get back to you as soon as possible. Looking forward to hearing from you!",
+  body: "If you'd like to get in touch, simply fill out the form below and I'll get back to you as soon as possible. Looking forward to hearing from you!",
 };
 
 export const projects = [
@@ -47,7 +47,7 @@ export const projects = [
   {
     title: "Bit-Show",
     body1:
-      "A web application that allows users to search Tv Shows from Api end point, and to see details about each show ",
+      "A web application that allows users to search Tv Shows from Api endpoint, and to see details about each show.",
     body2: "Technologies used: React, Vanilla Css",
 
     links: [
@@ -64,8 +64,8 @@ export const projects = [
   {
     title: "Movie Quotes",
     body1:
-      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details about each movie.  ",
-    body2: "React, Vanilla Css",
+      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details about each movie.",
+    body2: "Technologies used: React, Vanilla Css",
 
     links: [
       {
@@ -79,53 +79,70 @@ export const projects = [
     ],
   },
   {
-    title: "Movie Quotes",
+    title: "React People",
     body1:
-      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details about each movie.  ",
-    body2: "React, Vanilla Css",
+      "A web application that allows users to search People from Api endpoint, and to see details about each person.",
+    body2: "Technologies used: React, Vanilla Css",
 
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/rada-ii/Movie-Quotes",
+        url: "https://github.com/rada-ii/React-People",
       },
       {
         text: "Live Site",
-        url: "https://movie-quotes-xi.vercel.app/",
+        url: "react-people.vercel.app",
       },
     ],
   },
   {
-    title: "Movie Quotes",
+    title: "Space flight news",
     body1:
-      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details about each movie.  ",
-    body2: "React, Vanilla Css",
+      "A simple web application that allows users to see some news and images about space from Api endpoint.",
+    body2: "Technologies used: React, Vanilla Css",
 
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/rada-ii/Movie-Quotes",
+        url: "https://github.com/rada-ii/spaceFlight-news",
       },
       {
         text: "Live Site",
-        url: "https://movie-quotes-xi.vercel.app/",
+        url: "https://space-flight-news-ten.vercel.app/",
       },
     ],
   },
   {
-    title: "Movie Quotes",
+    title: "100 books",
     body1:
-      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details about each movie.  ",
-    body2: "React, Vanilla Css",
+      "A simple web application that allows users to add & delete their own books to read.",
+    body2: "Technologies used: React, Vanilla Css",
 
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/rada-ii/Movie-Quotes",
+        url: "https://github.com/rada-ii/100-books",
       },
       {
         text: "Live Site",
-        url: "https://movie-quotes-xi.vercel.app/",
+        url: "100-books.vercel.app",
+      },
+    ],
+  },
+  {
+    title: "Recipe Blog",
+    body1:
+      "A simple web application that allows users to see some food recipes.",
+    body2: "Technologies used: HTML, JS & Vanilla Css",
+
+    links: [
+      {
+        text: "Source Code",
+        url: "https://github.com/rada-ii/Recipe_Blog",
+      },
+      {
+        text: "Live Site",
+        url: "recipe-blog-navy.vercel.app/",
       },
     ],
   },
