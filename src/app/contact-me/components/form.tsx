@@ -1,10 +1,8 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 
 export const Form = () => {
   const [isMessageSent, setMessageSent] = useState<boolean>(false);
-
-  const formRef = useRef<HTMLFormElement | null>(null);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -13,7 +11,7 @@ export const Form = () => {
     const name = target.elements.namedItem("name") as HTMLInputElement;
     const company = target.elements.namedItem("company") as HTMLInputElement;
     const email = target.elements.namedItem("email") as HTMLInputElement;
-    const message = target.elements.namedItem("message") as HTMLInputElement;
+    const message = target.elements.namedItem("message") as HTMLTextAreaElement;
 
     const data = {
       name: name.value,
@@ -34,6 +32,12 @@ export const Form = () => {
         throw new Error("HTTP error! status: " + response.status);
       }
       setMessageSent(true);
+      const responseData = await response.json();
+      console.log(responseData);
+      name.value = "";
+      company.value = "";
+      email.value = "";
+      message.value = "";
     } catch (error: any) {
       console.log(
         "There was a problem with the fetch operation " + error.message
@@ -41,26 +45,9 @@ export const Form = () => {
     }
   }
 
-  useEffect(() => {
-    let timeout: NodeJS.Timeout;
-    if (isMessageSent && formRef) {
-      formRef.current?.reset();
-      setTimeout(() => {
-        setMessageSent(false);
-      }, 2000);
-    }
-    return () => {
-      clearTimeout(timeout);
-    };
-  }, [isMessageSent]);
-
   return (
     <>
-      <form
-        onSubmit={handleSubmit}
-        className="mb-10 p-10 text-white"
-        ref={formRef}
-      >
+      <form onSubmit={handleSubmit} className="mb-10 h-full p-10 text-white">
         <div className="mb-4">
           <label className="label-form" htmlFor="name">
             Name
@@ -71,8 +58,6 @@ export const Form = () => {
             name="name"
             className="input mt-4"
             required
-            // minLength={3}
-            // maxLength={200}
           />
         </div>
 
@@ -100,8 +85,6 @@ export const Form = () => {
             name="email"
             className="input my-4"
             required
-            minLength={2}
-            maxLength={200}
           />
         </div>
 
@@ -112,16 +95,14 @@ export const Form = () => {
           <textarea
             id="message"
             name="message"
-            className="my-4 h-48 w-full rounded-3xl border border-indigo-400 bg-transparent"
+            className="my-4  w-full rounded-3xl border border-indigo-400 bg-transparent p-5 text-2xl  hover:bg-indigo-100 hover:text-black sm:text-2xl"
             required
-            // minLength={10}
-            // maxLength={1000}
           />
         </div>
         <div className="mb-5 flex justify-center">
           <button
             type="submit"
-            className=" min-w-100  mx-auto   h-12 self-center rounded-3xl  bg-indigo-400 px-5 text-center font-extralight text-black  hover:bg-white hover:text-indigo-400 sm:font-bold"
+            className=" min-w-100  mx-auto   self-center rounded-3xl  bg-indigo-400 px-5 text-center font-extralight text-black  hover:bg-white hover:text-indigo-400 sm:font-bold"
           >
             Send Message
           </button>

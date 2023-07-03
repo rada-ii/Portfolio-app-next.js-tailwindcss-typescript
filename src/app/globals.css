@@ -274,7 +274,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  /* height: 100%; */
+  height: 100dvh;
 }
 .imageContainer1 {
   position: relative;
@@ -318,7 +318,7 @@ header {
 } */
 
 .input {
-  @apply h-14 w-full rounded-3xl border border-indigo-400 bg-transparent px-5;
+  @apply w-full rounded-3xl border border-indigo-400 bg-transparent px-5  hover:bg-indigo-100 hover:text-black;
 }
 
 .label-form {
