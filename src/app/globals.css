@@ -261,19 +261,29 @@ footer {
 /* ========================================= */
 
 body {
-  background: linear-gradient(
-    50deg,
-    /* #fff 0%, */ #131913 5%,
-    /* #818cf8 7%, */ #131913 10%,
-    #13293d 23%,
-    /* #fff 28%, */ #131913 29%,
-    #0b0014 54%,
-    #13293d 59%,
-    #131913 85%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  /* background: linear-gradient( */
+  /* 50deg, */
+  /* #fff 0%, */
+  /* #131913 5%, */
+  /* #818cf8 7%, */
+  /* #131913 10%, */
+  /* #13293d 23%, */
+  /* #fff 28%, */
+  /* #131913 29%, */
+  /* #0b0014 54%, */
+  /* #13293d 59%, */
+  /* #131913 85% */
+  /* ); */
+  /* -webkit-background-clip: text; */
+  /* background-clip: text; */
+  /* color: transparent; */
+
+  /* background: #13293d;
+  height: 100dvh; */
+}
+
+body {
+  background: #13293d;
   height: 100dvh;
 }
 .imageContainer1 {

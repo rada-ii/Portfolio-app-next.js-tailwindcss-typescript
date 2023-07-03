@@ -102,7 +102,7 @@ export const Form = () => {
         <div className="mb-5 flex justify-center">
           <button
             type="submit"
-            className=" min-w-100  mx-auto   self-center rounded-3xl  bg-indigo-400 px-5 text-center font-extralight text-black  hover:bg-white hover:text-indigo-400 sm:font-bold"
+            className=" min-w-100 mx-auto self-center rounded-3xl bg-indigo-400  px-5 py-2 text-center font-extralight text-black  hover:bg-white hover:text-indigo-400 sm:font-bold"
           >
             Send Message
           </button>
