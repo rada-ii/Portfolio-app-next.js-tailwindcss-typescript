@@ -176,9 +176,12 @@ h6 {
     font-size: 1.6rem;
     line-height: 1.5;
   }
+  .head {
+    font-size: 1rem;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 892px) {
   .container {
     flex-direction: column;
     justify-content: space-evenly;
@@ -221,7 +224,7 @@ h6 {
     justify-content: center !important;
   }
   header {
-    font-size: 1.2rem;
+    font-size: 1rem;
     /* margin-bottom: 2rem !important; */
   }
 }
@@ -315,9 +318,9 @@ header {
 } */
 
 .input {
-  @apply h-14 w-full rounded-3xl border border-indigo-400 bg-transparent;
+  @apply h-14 w-full rounded-3xl border border-indigo-400 bg-transparent px-5;
 }
 
 .label-form {
-  @apply mb-2 px-3 text-xl font-extralight text-white;
+  @apply px-3 text-base font-bold  text-white sm:text-xl;
 }

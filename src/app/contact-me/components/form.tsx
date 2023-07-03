@@ -56,7 +56,11 @@ export const Form = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="p-10 text-white" ref={formRef}>
+      <form
+        onSubmit={handleSubmit}
+        className="mb-10 p-10 text-white"
+        ref={formRef}
+      >
         <div className="mb-4">
           <label className="label-form" htmlFor="name">
             Name
@@ -114,10 +118,10 @@ export const Form = () => {
             // maxLength={1000}
           />
         </div>
-        <div className="flex justify-center">
+        <div className="mb-5 flex justify-center">
           <button
             type="submit"
-            className="bg-blue hover:text-blue min-w-100  mx-auto   h-12 self-center rounded-3xl  bg-indigo-400 px-5 text-center font-bold  text-black hover:bg-white hover:text-indigo-400"
+            className=" min-w-100  mx-auto   h-12 self-center rounded-3xl  bg-indigo-400 px-5 text-center font-extralight text-black  hover:bg-white hover:text-indigo-400 sm:font-bold"
           >
             Send Message
           </button>

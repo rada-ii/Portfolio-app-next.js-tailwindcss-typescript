@@ -13,7 +13,7 @@ type HeaderProps = {
 
 export const Header = ({ pages }: HeaderProps) => {
   return (
-    <header className="mx-32  mb-2">
+    <header className="head mx-32  mb-2">
       <div className="nav mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6">
         <nav className="flex flex-row gap-3 self-end text-center sm:gap-6">
           {pages.map((page) => {
@@ -22,7 +22,7 @@ export const Header = ({ pages }: HeaderProps) => {
                 aria-label={page.label}
                 key={page.id}
                 href={page.link}
-                className="min-w-100 font-display animate-flyInLeft rounded-full bg-indigo-400 px-6 py-2 font-bold tracking-wide text-black hover:bg-white hover:text-indigo-400 sm:bg-none"
+                className="min-w-100 font-display animate-flyInLeft rounded-full bg-indigo-400 px-5 py-2 font-bold tracking-wide text-black hover:bg-white hover:text-indigo-400 sm:bg-none lg:px-6"
               >
                 {page.label}
               </Link>
