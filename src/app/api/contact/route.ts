@@ -1,42 +1,64 @@
-// api/contact.ts
-import { NextRequest, NextResponse } from "next/server";
-const fs = require("fs");
-const path = require("path");
+import React from "react";
+import { NextResponse, NextRequest } from "next/server";
+import mongoose from "mongoose";
+import Message from "../../models/Message";
 
-export async function POST(request: NextRequest) {
-  const data = await request.json();
+export async function POST(req: NextRequest, res: NextResponse) {
+  const MONGODB_URI =
+    "mongodb+srv://portfolio-user:b3xUaKZhq1tzlAzn@cluster0.u0smj4y.mongodb.net/";
 
-  const filePath = path.resolve(process.cwd(), "src/app/data/submission.json");
-
-  let submissions: any = [];
-
-  try {
-    const data = fs.readFileSync(filePath, "utf8");
-    submissions = JSON.parse(data);
-  } catch (error) {
-    console.error("Error reading this file", error);
-  }
-
-  console.log(data, submissions, "data>>>");
-
-  submissions.push(data);
+  let client;
 
   try {
-    const newData = JSON.stringify(submissions, null, 2);
-    fs.writeFileSync(filePath, newData, "utf8");
-    console.log("Data has been written to the file");
+    client = await mongoose.connect(MONGODB_URI);
+    console.log("DB connected");
   } catch (error) {
-    console.error("Error writing this file", error);
+    console.log("There was an error connection to the DB", error);
   }
 
-  return NextResponse.json({
-    data: data,
-    message: "This message has been successfully sent",
-  });
+  const data = await req.json();
+
+  const { name, email, company, message } = data;
+
+  if (
+    !name ||
+    !company ||
+    !message ||
+    !email ||
+    !email.includes("@") ||
+    message.trim() === "" ||
+    name.trim() === ""
+  ) {
+    NextResponse.json(
+      { message: "Invalid input - fill all the fields" },
+      {
+        status: 422,
+      }
+    );
+    return;
+  }
+
+  const newData = {
+    ...data,
+    date: new Date(),
+  };
+
+  try {
+    await Message.create(newData);
+    console.log("Message Sent");
+    return NextResponse.json(
+      { message: "Message sent" },
+      {
+        status: 201,
+      }
+    );
+  } catch (error) {
+    console.log("Message couldn't be sent", error);
+    return NextResponse.json(
+      { message: "Error sending the message" },
+      {
+        status: 500,
+      }
+    );
+  }
 }
-
-/* export async function GET() {
-	return NextResponse.json({
-		message: "bbbbb!!",
-	});
-} */

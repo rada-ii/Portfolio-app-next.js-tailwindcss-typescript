@@ -133,7 +133,7 @@ export const projects = [
   {
     title: "Recipe Blog",
     body1:
-      "A simple web application that allows users to browse some food recipe. It's a personal practice project.",
+      "A small web application that allows users to browse some food recipe. It's a personal practice project.",
     body2: "Technologies used: HTML, JS & Vanilla Css",
     image: "/images/recipe-blog.jpg",
     links: [

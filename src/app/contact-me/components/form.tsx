@@ -31,15 +31,12 @@ export const Form = () => {
       if (!response.ok) {
         throw new Error("HTTP error! status: " + response.status);
       }
-      // setMessageSent(true);
-
       setMessageSent(true);
+      // alert("Message has been sent!");
 
-      alert("Message has been sent!");
-
-      // setTimeout(() => {
-      //   setMessageSent(false);
-      // }, 2000);
+      setTimeout(() => {
+        setMessageSent(false);
+      }, 1000);
       const responseData = await response.json();
       console.log(responseData);
       name.value = "";
@@ -116,7 +113,9 @@ export const Form = () => {
           </button>
         </div>
       </form>
-      {/* {isMessageSent && <p> Message has been Sent</p>} */}
+      {isMessageSent && (
+        <p className="text-center text-white"> Message has been Sent</p>
+      )}
     </>
   );
 };
