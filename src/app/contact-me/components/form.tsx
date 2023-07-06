@@ -36,7 +36,7 @@ export const Form = () => {
 
       setTimeout(() => {
         setMessageSent(false);
-      }, 2000);
+      }, 3000);
       const responseData = await response.json();
       console.log(responseData);
       name.value = "";
