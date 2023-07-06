@@ -15,7 +15,7 @@ const AboutMe: React.FC = () => {
 
   return (
     <div className="mg">
-      <div className="container h-screen w-fit">
+      <div className="container h-screen ">
         <div className="textContainer sm:text-[8px]  md:text-[10px]  lg:text-[13px]  xl:text-2xl xl:leading-8 2xl:text-3xl">
           <div className="text  opacity-50 sm:leading-loose">
             <h2 className="gradient">{aboutData.title}</h2>
