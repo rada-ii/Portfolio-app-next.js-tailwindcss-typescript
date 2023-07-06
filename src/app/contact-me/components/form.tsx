@@ -54,6 +54,11 @@ export const Form = () => {
     <>
       <form onSubmit={handleSubmit} className="mb-10 h-full p-10 text-white">
         <div className="mb-4">
+          {isMessageSent && (
+            <p className="mb-8 text-center text-xl text-white">
+              Message has been Sent
+            </p>
+          )}
           <label className="label-form" htmlFor="name">
             Name
           </label>
@@ -112,11 +117,6 @@ export const Form = () => {
             Send Message
           </button>
         </div>
-        {isMessageSent && (
-          <p className="mb-8 text-center text-xl text-white">
-            Message has been Sent
-          </p>
-        )}
       </form>
     </>
   );
