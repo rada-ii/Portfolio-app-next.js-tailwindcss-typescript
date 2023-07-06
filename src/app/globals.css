@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Lato:wght@400;700;900&display=swap");
 
 body {
   font-family: "Open Sans", "Lato", sans-serif;
@@ -52,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", sans-serif;
+  font-family: "Aclonica", sans-serif;
 }
 
 .contact {
@@ -68,6 +68,7 @@ h6 {
   gap: 10rem;
   margin: 0 auto !important;
   overflow: visible;
+  padding: 2rem;
 }
 
 .textContainer {
