@@ -36,7 +36,7 @@ export const Form = () => {
 
       setTimeout(() => {
         setMessageSent(false);
-      }, 1000);
+      }, 2000);
       const responseData = await response.json();
       console.log(responseData);
       name.value = "";
@@ -112,10 +112,12 @@ export const Form = () => {
             Send Message
           </button>
         </div>
+        {isMessageSent && (
+          <p className="mb-8 text-center text-xl text-white">
+            Message has been Sent
+          </p>
+        )}
       </form>
-      {isMessageSent && (
-        <p className="text-center text-white"> Message has been Sent</p>
-      )}
     </>
   );
 };

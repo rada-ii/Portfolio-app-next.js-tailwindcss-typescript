@@ -334,3 +334,14 @@ header {
 .label-form {
   @apply px-3 text-base font-bold  text-white sm:text-xl;
 }
+
+/* .font-inter {
+  font-family: "Inter", sans-serif;
+} */
+/* globals.css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+:global(.font-inter) {
+  font-family: "Inter", sans-serif;
+  /* Add any other font-related CSS properties here */
+}
