@@ -13,7 +13,7 @@ type HeaderProps = {
 
 export const Header = ({ pages }: HeaderProps) => {
   return (
-    <header className="head mx-32  mb-2 w-11/12 ">
+    <header className="head mx-32  mb-2 w-full">
       <div className="nav mt-8 flex flex-row-reverse items-center justify-between px-1 sm:px-6">
         <nav className="flex flex-row gap-3 self-end text-center sm:gap-6">
           {pages.map((page) => {
