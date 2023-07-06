@@ -5,7 +5,7 @@ import { ProjectCard } from "./components/project-card";
 const MyProjects = () => {
   return (
     <div className="body mx-auto mb-12 grid h-full w-fit  ">
-      <div className=" m-auto mt-10 flex w-11/12 flex-col content-center px-10 ">
+      <div className=" m-auto mt-10 flex w-11/12 flex-col content-center px-12  ">
         <h2 className="mb-10 text-center text-5xl font-bold text-white">
           My Projects
         </h2>
