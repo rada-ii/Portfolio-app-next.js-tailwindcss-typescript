@@ -1,7 +1,7 @@
-checkout live:
+check out live:
 https://portfolio-cv-rada.netlify.app/
 
-
+This full-stack portfolio app, where you can see info about me, CV and my projects!
 
 
 
@@ -13,6 +13,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+npm i
+# or
+nmp install
+# after
 npm run dev
 # or
 yarn dev
