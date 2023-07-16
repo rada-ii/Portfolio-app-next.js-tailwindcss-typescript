@@ -105,7 +105,7 @@ export const Form = () => {
           <textarea
             id="message"
             name="message"
-            className="my-4  w-full rounded-3xl border border-indigo-400 bg-transparent p-5 text-2xl  hover:bg-indigo-100 hover:text-black sm:text-2xl"
+            className="my-4  w-full rounded-3xl border border-indigo-400 bg-transparent p-5 text-2xl hover:bg-[#373b4f] hover:text-slate-50 sm:text-2xl"
             required
           />
         </div>

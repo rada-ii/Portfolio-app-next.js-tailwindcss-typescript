@@ -20,12 +20,12 @@ export const ProjectCard = ({ data }: ProjectCardProps) => {
   const { title, body1, body2, image, links } = data;
 
   return (
-    <div className="sm:w-1/3-g v-screen flex w-full flex-col justify-between  rounded-3xl  border-2 border-slate-100  shadow-lg">
+    <div className="sm:w-1/3-g v-screen mb  border-1 flex w-full  flex-col  justify-between rounded-3xl  border-slate-100 bg-[#373b4f] shadow-lg">
       <Image
         aria-label={`Image of ${title}`}
         src={image}
         alt={title}
-        className="card-img min-h-80   w-full object-cover "
+        className="card-img min-h-80 w-full object-cover "
         priority={false}
         width={500}
         height={250}

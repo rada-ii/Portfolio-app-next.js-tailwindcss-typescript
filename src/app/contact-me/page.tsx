@@ -11,7 +11,7 @@ const ContactMePage = () => {
           <h3 className="2xl mb-10 text-xl  sm:text-3xl ">
             {/* {contactMeText.title} */}
           </h3>
-          <p className="px-10">{contactMeText.body}</p>
+          <p className="hi px-10">{contactMeText.body}</p>
         </div>
         <div className="w-full flex-grow">
           <Form />
