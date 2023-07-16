@@ -53,8 +53,9 @@ h3,
 h4,
 h5,
 h6,
-.hi {
-  font-family: "Aclonica", sans-serif;
+.hi,
+.mg {
+  /* font-family: "Aclonica", sans-serif; */
   font-family: "Tilt Prism", cursive;
 }
 

@@ -95,20 +95,37 @@ export const projects = [
       },
     ],
   },
+  // {
+  //   title: "Movie Quotes",
+  //   body1:
+  //     "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details.",
+  //   body2: "Technologies used: React, Vanilla Css",
+  //   image: "/images/movie.png",
+  //   links: [
+  //     {
+  //       text: "Source Code",
+  //       url: "https://github.com/rada-ii/Movie-Quotes",
+  //     },
+  //     {
+  //       text: "Live Site",
+  //       url: "https://movie-quotes-xi.vercel.app/",
+  //     },
+  //   ],
+  // },
   {
-    title: "Movie Quotes",
+    title: "Quote App",
     body1:
-      "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details.",
-    body2: "Technologies used: React, Vanilla Css",
-    image: "/images/movie.png",
+      "A simple app that fetches quotes from an API endpoint and allows you to save or delete quotes.",
+    body2: "Technologies used: Next.js, TypeScript & TailwindCss",
+    image: "/images/quote.png",
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/rada-ii/Movie-Quotes",
+        url: "https://github.com/rada-ii/Quote-app-next.js-tailwindcss-typescript",
       },
       {
         text: "Live Site",
-        url: "https://movie-quotes-xi.vercel.app/",
+        url: "https://quote-app-next-js-tailwindcss-typescript.vercel.app/",
       },
     ],
   },
