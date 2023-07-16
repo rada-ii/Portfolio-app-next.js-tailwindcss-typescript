@@ -9,7 +9,7 @@ type FooterProp = {
 
 const Footer = ({ contactMeLinks }: FooterProp) => {
   return (
-    <footer className="shadow-footer fixed bottom-0  w-full pt-4 ">
+    <footer className="shadow-footer fixed bottom-0  mt-4 w-full ">
       <div className="flex items-center justify-center gap-3 px-6 ">
         <a href={contactMeLinks[0]} aria-label="Linkedin">
           <Linkedin className="contact " />

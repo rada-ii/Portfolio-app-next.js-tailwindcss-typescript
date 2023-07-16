@@ -95,28 +95,28 @@ export const projects = [
       },
     ],
   },
-  // {
-  //   title: "Movie Quotes",
-  //   body1:
-  //     "A simple full stack web application that allows users to see some famous movie quotes, add their own quotes & see details.",
-  //   body2: "Technologies used: React, Vanilla Css",
-  //   image: "/images/movie.png",
-  //   links: [
-  //     {
-  //       text: "Source Code",
-  //       url: "https://github.com/rada-ii/Movie-Quotes",
-  //     },
-  //     {
-  //       text: "Live Site",
-  //       url: "https://movie-quotes-xi.vercel.app/",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Movie Quotes",
+    body1:
+      "A simple full stack web application that allows users to see movie quotes, add their own quotes ",
+    body2: "Technologies used: React, Vanilla Css, SupaBase",
+    image: "/images/movie.png",
+    links: [
+      {
+        text: "Source Code",
+        url: "https://github.com/rada-ii/Movie-Quotes",
+      },
+      {
+        text: "Live Site",
+        url: "https://movie-quotes-xi.vercel.app/",
+      },
+    ],
+  },
   {
     title: "Quote App",
     body1:
       "A simple app that fetches quotes from an API endpoint and allows you to save or delete quotes.",
-    body2: "Technologies used: Next.js, TS, MongoDB & TailwindCss",
+    body2: "Technologies used: Next.js, TypeScript & TailwindCss",
     image: "/images/quote.png",
     links: [
       {
@@ -129,28 +129,10 @@ export const projects = [
       },
     ],
   },
-  // {
-  //   title: "100 books",
-  //   body1:
-  //     "A simple web application that allows users to add & delete their own books to read.",
-  //   body2: "Technologies used: React, Vanilla Css",
-  //   image:
-  //     "https://drive.google.com/file/d/1wpTUh0NBYtgF4ujLoip5wTA4dV8Mq-TA/view?usp=sharing",
-  //   links: [
-  //     {
-  //       text: "Source Code",
-  //       url: "https://github.com/rada-ii/100-books/",
-  //     },
-  //     {
-  //       text: "Live Site",
-  //       url: "100-books.vercel.app",
-  //     },
-  //   ],
-  // },
   {
     title: "Recipe Blog",
     body1:
-      "A small web application that allows users to browse some food recipe. It's a personal practice project.",
+      "A small web application that allows users to browse some food recipe.",
     body2: "Technologies used: HTML, JS & Vanilla Css",
     image: "/images/recipe-blog.jpg",
     links: [
@@ -161,6 +143,41 @@ export const projects = [
       {
         text: "Live Site",
         url: " https://recipe-blog-navy.vercel.app/",
+      },
+    ],
+  },
+
+  {
+    title: "Books",
+    body1:
+      "A simple web application that allows users to add & delete their own books to read.",
+    body2: "Technologies used: React, Vanilla Css",
+    image: "/images/books.png",
+    links: [
+      {
+        text: "Source Code",
+        url: "https://github.com/rada-ii/100-books/",
+      },
+      {
+        text: "Live Site",
+        url: "100-books.vercel.app",
+      },
+    ],
+  },
+  {
+    title: "My CV",
+    body1:
+      "A small web application that represents info about me. It's personal practice project.",
+    body2: "Technologies used: HTML, JS & Vanilla Css",
+    image: "/images/cv.png",
+    links: [
+      {
+        text: "Source Code",
+        url: "https://github.com/rada-ii/CV-Resume",
+      },
+      {
+        text: "Live Site",
+        url: " https://cv-resume-ashen.vercel.app/",
       },
     ],
   },
