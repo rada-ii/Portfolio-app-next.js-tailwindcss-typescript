@@ -116,7 +116,7 @@ export const projects = [
     title: "Quote App",
     body1:
       "A simple app that fetches quotes from an API endpoint and allows you to save or delete quotes.",
-    body2: "Technologies used: Next.js, TypeScript & TailwindCss",
+    body2: "Technologies used: Next.js, TS, MongoDB & TailwindCss",
     image: "/images/quote.png",
     links: [
       {
