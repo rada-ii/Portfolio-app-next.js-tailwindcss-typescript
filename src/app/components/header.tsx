@@ -38,7 +38,7 @@ export const Header = ({ pages }: HeaderProps) => {
           Download FIle
         </a> */}
         {/* <a href={cv} download="your_cv.pdf"> */}
-        <a href="/cv/cv.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/cv/CV.pdf" target="_blank" rel="noopener noreferrer">
           <button className="min-w-100 font-display animate-flyInRight m-0   rounded-full bg-indigo-400 px-6 py-2 font-bold text-black opacity-100 hover:bg-white hover:text-indigo-400">
             Download CV
           </button>
