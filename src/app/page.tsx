@@ -19,7 +19,7 @@ const AboutMe: React.FC = () => {
         <div className="textContainer  md:text-[10px]  lg:text-[13px]  xl:text-2xl xl:leading-8 2xl:text-3xl">
           <div className="text  opacity-50 sm:leading-loose">
             <h2 className="gradient">{aboutData.title}</h2>
-            <p className="gradient">
+            <p className="gradient text-3xl me">
               {aboutData.body} <span className="no">😊</span>
             </p>
           </div>

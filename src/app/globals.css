@@ -379,3 +379,7 @@ header {
 .book:last-child {
   padding: 0 !important;
 }
+
+.me {
+  line-height: 3rem !important;
+}
