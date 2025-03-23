@@ -1,46 +1,111 @@
 check out live:
-https://portfolio-cv-rada.netlify.app/
 
-This full-stack portfolio app, where you can see info about me, CV and my projects!
+# Portfolio Website
 
+**Portfolio Website** is a modern web application built with **Next.js** that showcases my projects, skills, and provides a way for potential employers or clients to contact me.
 
+## 🚀 Features
 
+* 📋 **Project Showcase** – Display of various web development projects with descriptions and links
+* 📄 **About Me Section** – Personal introduction and background information
+* 📱 **Responsive Design** – Optimized for all screen sizes
+* 📨 **Contact Form** – Allow visitors to send messages directly through the website
+* 💾 **MongoDB Integration** – Store submitted contact messages in a database
+* 📝 **CV Download** – Provide access to download my curriculum vitae
+* 🔗 **Social Media Links** – Easy access to LinkedIn, GitHub, and email
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🛠️ Built With
 
-## Getting Started
+* **Next.js** – React framework for server-side rendering and static site generation
+* **TypeScript** – For type-safe JavaScript development
+* **Tailwind CSS** – For responsive and utility-first styling
+* **MongoDB** – For storing contact form submissions
+* **Mongoose** – MongoDB object modeling for Node.js
+* **Vercel** – For deployment and hosting
 
-First, run the development server:
+## 📸 Screenshots
+
+<!-- Add your screenshots here -->
+
+## 📦 Getting Started
+
+### Installation
 
 ```bash
+git clone https://github.com/YOUR-USERNAME/portfolio-website.git
+cd portfolio-website
 npm i
-# or
-nmp install
-# after
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Configuration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the root directory with the following variables:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+MONGODB_URI=your_mongodb_connection_string
+```
 
-## Learn More
+### Start Development Server
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+App will be available at:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+http://localhost:3000
+```
 
-## Deploy on Vercel
+## 📄 Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Home/About Me Page**
+   * Displays personal introduction with a background image
+   * Features a prominent "Download CV" button
+   * Simple and elegant design with gradient text
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Projects Page**
+   * Showcases a collection of development projects
+   * Each project includes an image, description, and links to source code and live site
+   * Responsive grid layout for different screen sizes
+
+3. **Contact Me Page**
+   * Features a contact form for visitors to send messages
+   * Form includes fields for name, company, email, and message
+   * Form submissions are stored in MongoDB
+
+## 💻 API Routes
+
+* **/api/contact**
+  * POST: Handles contact form submissions
+  * Validates form data
+  * Stores messages in MongoDB
+  * Returns confirmation response
+
+## 📂 Project Structure
+
+## 🌐 Live Demo
+
+👉 [View the portfolio website](#) <!-- Add your deployed website link here -->
+
+## ✨ Additional Features
+
+* Custom SVG icons for social media links
+* Animations for page transitions and elements
+* Form validation for contact submissions
+* Success message display after form submission
+* MongoDB integration for storing contact messages
+* Custom styling with Tailwind CSS
+* Responsive design for all device sizes
+
+## 🤝 Contributing
+
+Contributions are welcome! Open an issue or submit a pull request to suggest improvements.
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+## 👩‍💻 Author
+
+Developed by Radmila Ivankovic
