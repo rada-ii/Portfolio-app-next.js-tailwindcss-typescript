@@ -30,7 +30,7 @@
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/portfolio-website.git
+git clone https://github.com/rada-ii/Portfolio-app-next.js-tailwindcss-typescript.git
 cd portfolio-website
 npm i
 ```
@@ -105,4 +105,4 @@ This project is licensed under the **MIT License**.
 
 ## 👩‍💻 Author
 
-Developed by Radmila Ivankovic
+Developed by [Rada Ivankovic](https://github.com/rada-ii) ✨ 
