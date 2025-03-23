@@ -1,5 +1,3 @@
-check out live:
-
 # Portfolio Website
 
 **Portfolio Website** is a modern web application built with **Next.js** that showcases my projects, skills, and provides a way for potential employers or clients to contact me.
@@ -86,8 +84,7 @@ http://localhost:3000
 
 ## 🌐 Live Demo
 
-👉 [View the portfolio website](#) <!-- Add your deployed website link here -->
-
+👉 [View the portfolio website](https://portfolio-rada-ii.vercel.app/)
 ## ✨ Additional Features
 
 * Custom SVG icons for social media links
