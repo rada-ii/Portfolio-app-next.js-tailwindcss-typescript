@@ -31,7 +31,7 @@
 
 ```bash
 git clone https://github.com/rada-ii/Portfolio-app-next.js-tailwindcss-typescript.git
-cd portfolio-website
+cd Portfolio-app-next.js-tailwindcss-typescript
 npm i
 ```
 
@@ -106,3 +106,5 @@ This project is licensed under the **MIT License**.
 ## 👩‍💻 Author
 
 Developed by [Rada Ivankovic](https://github.com/rada-ii) ✨ 
+
+> "Gotta code it all, one component at a time!"
